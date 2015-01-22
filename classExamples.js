@@ -223,6 +223,64 @@ var result = adder(1,2,4,5);
 alert("The total number is " + result);
 
 
+/* In this repo your job is to write functions to make each function call work properly.
+Below is a sample problem 
+
+  //code here for sayHi
+
+   sayHi('Hi Katie', function(thingToSay){
+      alert(thingToSay);
+   });
+   
+
+and what you should write is the favNum function that makes the code above work, 
+    
+    
+   var sayHi = function(str, cb){
+    cb(str);
+   }
+
+   sayHi('Hi Katie', function(thingToSay){
+      alert(thingToSay); //should alert ('Hi Katie')'
+   });
+    
+    
+*/
 
 
+
+
+var last = function(names, callback) {
+  cb (names[names.length-1]);
+}  
+
+var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
+first(names, function(firstName){
+  console.log('The first name in names is ', firstName)
+});
+
+
+
+
+
+
+
+var contains = function(arr, str, callback){
+   var flag = false;
+  for(var i = 0; i < arr.length; i++){
+    if(str === arr[i]) {
+      flag = true;
+    }
+  }
+  callback(flag);
+};
+
+var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
+contains(names, 'Colt', function(result){
+  if(result === true){
+    console.log('Colt is in the array');
+  } else {
+    console.log('Colt is not in the array');
+  }
+});
 
