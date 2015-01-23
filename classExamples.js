@@ -364,24 +364,12 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 //loops through the given array backwards alerting every item in the array starting 
 //at the end.
 
-
-var reversedLooper = function(myArray){
-  myArray.reverse(i);
-  for (var i = 0; i < letters.length; i++){
-    alert(myArray[i]);
+var reversedLooper = function(arr){
+  for(var i = arr.length - 1; i < 0; i--){
   }
-};
-reversedLooper(myArray);
-
-
-
-var reversedLooper = function(myArray){
-  for(var i = myArray.length -1 ; i > 0; i--)
-  {
-    console.log(myArray[i, -1]);
-  };
-};
-
+  console.log(arr[i, 1]);
+}
+reversedLooper(letters);
 
 
 var nums = [1,2,3,6,22,98,45,23,22,12];
@@ -434,8 +422,29 @@ var finder = function(arr){
       return false;
     }
   }
-}    
+}  
 
+
+
+var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
+/*
+  Here we're going to write a function that mimics going shopping and checking things off of our grocery list,
+  and adding new items to our list. Write a function called removeItem that is given two arguments, the first is myGroceryList, and the
+  second is an item to remove from myGroceryList. If the second argument (or the item to add or remove) matches an item in myGroceryList,
+  remove that item from the your grocery list and return the new, updated grocery list. Once you do that,
+  write another function called addItem that is given two arguments, the first is myGroceryList
+  and the second is an item to add to your grocery list. In addItem add the item you passed in to
+  myGroceryList then return the new, updated grocery list.
+*/
+
+  var removeItem = function(list, item) {
+     for(var i = 0; i < list.length; i++) {
+       if (item === list[i]) {
+         list.splice(i, 1);
+           return list;
+       }
+     }
+  }  
 
 
 
