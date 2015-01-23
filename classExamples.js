@@ -388,16 +388,16 @@ var odds = []
 //(all the even values from nums) and the second item in the Array being the odds array
 //(all the odd values from nums).
 
-var divider = function(arr, evens, odds){
-  for (var i = 0; i < arr.length, i++){
-    if (arr(i) % 2 == 0){
-      evens.push[i];
-    }else{
-      odds.push[i];
-    };
-  };
-};
+var divider = function (arr, evens, odds){
+  for (var i = 0, i < arr.length; i++){
+    if (arr[i] % 2 === 0){
+      evens.push arr[i];
 
+      }else {
+      odds.push arr[i];
+    }
+  }
+}
 
 
 
@@ -413,15 +413,15 @@ var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 // if it's not, return false
 
 var finder = function(arr){
-   for(var i = 0; i < arr.length; i++){
   var randomNum = getRandomArbitrary;
-    console.log(randomNum);
-    if (arr[i] === randomNum){
-      return true;
-    } else {
-      return false;
+    for(var i = 0; i < arr.length; i++){
+      console.log(randomNum);
+      if (arr[i] === randomNum){
+        return true;
+      } else {
+        return false;
+      }
     }
-  }
 }  
 
 
