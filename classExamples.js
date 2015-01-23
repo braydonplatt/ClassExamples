@@ -284,3 +284,162 @@ contains(names, 'Colt', function(result){
   }
 });
 
+
+
+
+
+
+
+Prototypes
+
+
+
+
+
+
+/*
+  Your 3 Users will be the following. 
+    0) Tyler, tylermcginnis33@gmail.com, 'iLoveJS'
+    1) Cahlan, cahlan@devmounta.in, 'iLoveHashtags'
+    2) Lenny, lenny@theLenster.com, 'iLoveLentilSoup'
+*/
+
+var User = function(name, email, pw){
+  this.name = name;
+  this.email = email;
+  this.pw = pw;
+}
+
+//Create an Array called 'users' that will store all our instances of User.
+
+  var users = [];
+
+
+//Now create and push into your users array 3 seperate instances of User using the data from above in that exact order
+
+  var tyler = new User ('Tyler', 'tylermcginnis33@gmail.com', 'iLoveJS');
+  var cahlan = new User ('Cahlan', 'cahlan@devmounta.in', 'iLoveHashtags');
+  var lenny = new User ('Lenny', 'lenny@theLenster.com', 'iLoveLentilSoup');
+
+     users.push(tyler, cahlan, lenny);
+console.log('Tyler\'s information is ');
+//Console.log all of Tylers information
+
+console.log(tyler);
+
+console.log('Lenny\'s information is ');
+//Now console.log all of Lennys information
+
+console.log(lenny);
+
+
+//Now create another instance of User using your own information and then add that to your users array.
+
+  var braydon = new User ('Braydon', 'braydonplatt@gmail.com', 'objectsrule');
+   users.push(braydon);
+console.log('All my users names are ');
+//Now loop through your users Array and console.log every users name. 
+for (var i = 0; i < users.length; i++){
+  console.log(users[i].name);
+};
+  //code here
+
+
+
+
+
+ARRAYS PROBLEMS
+
+
+var arr = [10,20,30];
+//Create a function named 'first' that is given 'arr' as the argument and returns the first item the given array.
+
+var first = function(arr){
+  return arr[0];
+}
+
+
+var letters = ['A', 'B', 'C', 'D', 'E'];
+//Write a function called reversedLooper that is given letters as it's only argument and 
+//loops through the given array backwards alerting every item in the array starting 
+//at the end.
+
+
+var reversedLooper = function(myArray){
+  myArray.reverse(i);
+  for (var i = 0; i < letters.length; i++){
+    alert(myArray[i]);
+  }
+};
+reversedLooper(myArray);
+
+
+
+var reversedLooper = function(myArray){
+  for(var i = myArray.length -1 ; i > 0; i--)
+  {
+    console.log(myArray[i, -1]);
+  };
+};
+
+
+
+var nums = [1,2,3,6,22,98,45,23,22,12];
+//Write a function named evenFinder that is given nums
+// as it's only argument and removes all values that aren't even from the given array.
+
+
+
+
+
+var nums = [1,2,34,54,55,34,32,11,19,17,54,66,13];
+var evens = [];
+var odds = []
+//Write a function called divider that is given three arguments, nums, evens, and odds.
+//Have divider return an Array with the first item in the array being the evens array 
+//(all the even values from nums) and the second item in the Array being the odds array
+//(all the odd values from nums).
+
+var divider = function(arr, evens, odds){
+  for (var i = 0; i < arr.length, i++){
+    if (arr(i) % 2 == 0){
+      evens.push[i];
+    }else{
+      odds.push[i];
+    };
+  };
+};
+
+
+
+
+
+var getRandomArbitrary = function() {
+  return Math.floor(Math.random() * (30 - 0) + 0);
+}
+var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
+//Above your given a function that will return a random number between 0 and 30, and an array
+// full or numbers. Your job is to write a function
+// named finder that will get a random number, then loop through the array to see if that
+// random number is in the array. If it is, return true,
+// if it's not, return false
+
+var finder = function(arr){
+   for(var i = 0; i < arr.length; i++){
+  var randomNum = getRandomArbitrary;
+    console.log(randomNum);
+    if (arr[i] === randomNum){
+      return true;
+    } else {
+      return false;
+    }
+  }
+}    
+
+
+
+
+
+
+
+
