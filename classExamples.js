@@ -667,6 +667,177 @@ var reversedLooper = function(myArray){
 
 
 
+
+
+
+
+  var getRandomArbitrary = function() {
+  return Math.floor(Math.random() * (30 - 0) + 0);
+}
+var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
+//Above your given a function that will return a random number between 0 and 30, and an array full of numbers. Your job is to write a function
+// named finder that will get a random number, then loop through the array to see if that random number is in the array. If it is, return true,
+// if it's not, return false
+
+
+var finder = function(num){
+  for(var i = 0; i < num.length; i++){
+    var randomNum = getRandomArbitrary;
+    if(num[i] === randomNum);{
+    return true; 
+    }else{
+      return false;
+    }
+  }
+}
+
+
+
+
+
+
+
+//Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
+ var maker = function(arr){
+  var newArr = [];
+    for(var i = 1; i < 216; i++){
+      newArr.push(i);
+    }
+     return(newArr);
+ }
+
+
   
+
+
+
+var nums = [1,2,34,54,55,34,32,11,19,17,54,66,13];
+var evens = [];
+var odds = []
+//Write a function called divider that is given three arguments, nums, evens, and odds.
+//Have divider return an Array with the first item in the array being the evens array (all the even 
+//values from nums) and the second item in the Array being the odds array(all the odd values from nums).
+
+
+var divider = function(arr, evens, odds){
+  for(var i = 0; i < arr.length; i++){
+    if(arr[i] % 2 === 0){
+      evens.push arr[i];
+    } else {
+      odds.push arr[i];
+    }
+  }
+}
+
+
+
+
+
+
+var nums = [1,2,3,6,22,98,45,23,22,12];
+//Write a function named evenFinder that 
+//is given nums as it's only argument and removes all values that aren't even from the given array.
+
+
+var evenFinder = function(arr){
+  for(var i = 0; i < arr.length; i++){
+    if (arr[i] % 2 !== 0){
+      arr[i].splice(i, 1);
+      i--;
+    }
+  }
+}
+
+
+
+
+
+
+var arr = [40,50,60];
+//Create a function named 'last' that is given 'arr' as the argument and returns the last item the given array.
+
+
+var last = function(arr){
+  return(arr[arr.length -1]);
+}
+
+alert(last(arr));
+
+
+
+
+
+var name = 'Tyler';
+//Create a function called isTyler that accepts name as it's only argument.
+//If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
+
+
+
+
+var isTyler = function(str){
+  if(str === 'Tyler'){
+    return true;
+  }else{
+    return false;
+  }
+};
+
+isTyler(str);
+
+
+
+
+var getName = function(){
+  var name = prompt("what is your name?");
+  return(name);
+  getName();
+
+}
+
+//Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
+//then alerts "Welcome, " plus whatever the users name is.
+
+
+
+
+var welcome = function(){
+var newName = getName();
+  alert("Welcome, " + newName);
+}
+welcome();
+
+
+
+
+
+
+//Write a function called adder that uses the 'arguments' keyword that comes with every function to
+//loop over all the arguments the function received, add them all together, then return the result.
+//Save the result of the return value from your adder function, 
+//then alert "The Total Number was " + the number that was
+//returned from adder.
+
+
+
+var adder = function(num1, num2, num3, num4){
+  var total = 0;
+  for(var i = 0; i < arguments.length; i++){
+    total = total + arguments(i);
+  }
+  return total;
+}
+
+var result = adder(1,4,3,5);
+alert("The total number was " + result);
+
+
+
+
+
+
+
+
+
+
 
 
