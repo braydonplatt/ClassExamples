@@ -569,4 +569,104 @@ var users = [
 
 getUserById(users, '16t', function(user){
   console.log('The user with the id 16t has the email of ' + user.email + ' the name of ' + user.name + ' and the address of ' + user.address); 
-});
+
+
+
+
+
+
+
+
+
+
+
+
+  //Once you complete a problem, open up Chrome and check the answer in the console.
+
+
+var name = 'Tyler';
+//Create a function called isTyler that accepts name as it's only argument.
+//If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
+
+var isTyler = function(myName){
+  if(myName === "Tyler"){
+    return true;
+  }else{
+    return false;
+  }
+};
+
+isTyler(name);
+//Next problem
+
+
+
+
+
+
+
+//Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
+
+var getName = function(){
+  var name = prompt("what is your name?");
+  return(name);
+  getName();
+
+}
+
+
+
+
+//Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
+//then alerts "Welcome, " plus whatever the users name is.
+
+
+var welcome = function(){
+  var name = getName();
+  alert("Welcome, " + getName);
+};
+welcome();
+
+
+
+
+
+//Write a function called adder that uses the 'arguments' keyword that comes with every function to
+//loop over all the arguments the function received, add them all together, then return the result.
+//Save the result of the return value from your adder function, then alert "The Total Number was " + the number that was
+//returned from adder.
+
+
+var adder = function(num1, num2, num3, num4){
+  var total = 0;
+  for (var i = 0; i < arguments.length; i++){
+    total = total + arguments(i);
+  }
+  return total;
+};
+
+var results = adder(1,3,6,8);
+alert("The Total Number was " + results);
+
+
+
+
+
+
+var letters = ['A', 'B', 'C', 'D', 'E'];
+//Write a function called reversedLooper that is given letters as it's only argument and loops through the given array backwards alerting every item in the array starting at the end.
+
+var reversedLooper = function(myArray){
+  myArray.reverse(i);
+    for(var i = 0; i < myArray.length; i++){
+      alert(myArray[i])
+    }
+  };
+
+  reversedLooper(letters);
+
+
+
+  
+
+
