@@ -1005,5 +1005,30 @@ var reverseString = function(string){
 
 
 
+//Create an object called me. Give it a key of name with the value being your name, and another key of age with the value being your age. Then alert your name using dot notation.
+
+var me = {
+  name: "Braydon",
+  age: 32,
+};
+alert(me.name);
+
+
+
+var states = {
+  Utah: 2000000,
+  California: 43000000,
+  Georgia: 16000000,
+  Arizona: 9000000,
+  NewYork: 20000000,
+};
+
+//Now, loop through your states object and if the states population is greater than 30K, alert that state.
+
+for (var key in states){
+  if(states[key] > 1000000){
+    alert(key);
+  }
+
 
 
