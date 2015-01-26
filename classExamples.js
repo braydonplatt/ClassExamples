@@ -904,3 +904,106 @@ var outerFn = function(){
   }
 };
 
+
+
+//Once you complete a problem, open up Chrome and check the answer in the console.
+
+
+var arr = [10,20,30];
+//Create a function named 'first' that is given 'arr' as the argument and returns the first item the given array.
+
+
+var first = function(arr){
+  return arr[0];
+};
+
+
+var last = function(arr){
+  return arr[arr.length -1];
+}
+
+
+
+var letters = ['A', 'B', 'C', 'D', 'E'];
+//Write a function called reversedLooper that is given letters as it's only argument
+// and loops through the given array backwards alerting every item in the array starting at the end.
+
+
+var reversedLooper = function(arr){
+  myArray.reverse(i);
+  for(var i = 0; i < arr.length; i++){
+    alert(myArray[i]);
+  };
+};
+reversedLooper(arr);
+
+
+var nums = [1,2,3,6,22,98,45,23,22,12];
+//Write a function named evenFinder that is given nums as it's only argument and removes all values 
+//that aren't even from the given array.
+
+var evenFinder = function(arr){
+  newArr = [];
+  for(var i = 0; i < arr.length; i++){
+    if(arr(i) % 2 === 0){
+      arr.splice(i, 1);
+      i--;
+    };
+  };
+};
+
+
+var nums = [1,2,34,54,55,34,32,11,19,17,54,66,13];
+var evens = [];
+var odds = []
+//Write a function called divider that is given three arguments, nums, evens, and odds.
+//Have divider return an Array with the first item in the array being the evens array 
+//(all the even values from nums) and the second item in the Array being 
+//the odds array(all the odd values from nums).
+
+var divider = function(arr, evens, odds){
+  for(var i = 0; i < arr.length; i++){
+    if (arr[i] % 2 === 0){
+    evens.push arr[i];
+    } else {
+    odds.psuh arr[i];
+    }
+  }
+}
+
+
+
+
+var getRandomArbitrary = function() {
+  return Math.floor(Math.random() * (30 - 0) + 0);
+}
+var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
+//Above your given a function that will return a random number between 0 and 30, and an array full or numbers. Your job is to write a function
+// named finder that will get a random number, then loop through the array to see if that random number is in the array. If it is, return true,
+// if it's not, return false
+
+
+var finder = function (arr){
+  var randomNum = getRandomArbitrary();
+  for(var i = 0; i < arr.length; i++){
+    if(arr[i] === randomNum) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+
+
+
+var str = 'this is my sentence';
+//Write a function called reverse that takes is given str as it's only argument and returns that string after it's been reversed
+
+var reverseString = function(string){
+  return string.split('').reverse().join('');
+}
+
+
+
+
+
