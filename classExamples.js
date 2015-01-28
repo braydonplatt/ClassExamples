@@ -1032,3 +1032,110 @@ for (var key in states){
 
 
 
+
+//Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category. 
+
+var favoriteThings = {
+  band: "Metallica",
+  food: "Street Tacos",
+  person: "Mikki",
+  book: "Linchpin",
+  movie: "Bourne Trilogy",
+  holiday: "Christmas"
+};
+
+//After you've made your object, add another 
+//key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
+
+ favoriteThings.car = "Porsche";
+ favoriteThings.brand = "Apple";
+
+
+ alert(favoriteThings.car);
+
+
+
+var user = {
+    name: 'Tyler McGinnis', 
+    email: null,
+    pwHash: 'U+Ldlngx2BYQk',
+    birthday: undefined,
+    username: 'tylermcginnis33',
+    age: 0
+}
+
+//Above you're given a user object. Loop through the user object checking to make sure that each value is truthy. 
+//If it's not truthy, remove it from the object. hint: 'delete'.
+
+
+for(var key in user){
+  if (!user[key])
+    delete user[key];
+};
+ console.log(user);
+
+//Once you get your truthy object, Change the remaining values in the object to be specific to you 
+//(name: 'your name', username: 'your username'), rather than my information.
+
+
+user.name = "Braydon",
+user.username = "brplatt",
+user.age = 32
+
+
+//Now console.log your object and make sure it looks right.
+console.log(user);
+
+
+
+
+var first = function(str, callback){
+  callback(names[0]);
+}
+
+
+var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
+first(names, function(firstName){
+  console.log('The first name in names is ', firstName)
+});
+
+
+
+//have the contains function return a boolean value for if the name is in the array or not.
+
+var contains = function(str, arr, callback){
+   var flag = false;
+   for(var i = 0; i < arr.length; i++){
+    if(str) !== arr[i]){
+  flag = true;
+}
+
+   }
+  callback(flag);
+}
+
+var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
+contains('Colt', names, function(yes){
+  if(yes){
+    console.log('Colt is in the array');
+  } else {
+    console.log('Colt is not in the list');
+  }
+});
+
+
+
+var callFriend = function(){
+  var friend = 'Jake';
+  function callF(number){
+    return 'Calling ' + friend + ' at ' + number;
+  }
+  return callF;
+};
+
+//Above you're given a callFriend function that returns another function.
+//Do what you need to do in order to call your function and get 'Calling Jake at 435-215-9248' in your console.
+
+
+var newNum = callFriend();
+newNum('435-215-9248');
