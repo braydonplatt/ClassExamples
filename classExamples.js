@@ -1139,3 +1139,19 @@ var callFriend = function(){
 
 var newNum = callFriend();
 newNum('435-215-9248');
+
+
+
+var arr = [10,20,30];
+//Create a function named 'first' that is given 'arr' as the argument and returns the first item the given array.
+var name = function(arr){
+  return(name[0]);
+};
+
+
+
+
+
+
+
+
