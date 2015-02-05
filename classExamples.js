@@ -1224,7 +1224,56 @@ var threeItems = [1,2,3];
 //create a function named 'last' that returns the last item from 'threeItems'
 //alert the result of your function
 
-var last = function(threeItems){
+var first = function(threeItems){
   return threeItems[0];
 }
 alert(threeItems);
+
+
+var threeItems = [2,4,6];
+
+var last = function(arr){
+  return threeItems[threeItems.length -1];
+}
+alert last(threeItems);
+
+
+//Loop through evenArray removing all values that aren't even 
+var evenArray = [1,2,3,6,22,98,45,23,22,12];
+
+var even = function(arr){
+  for(var i = 0; i < arr.length; i++){
+    if(arr[i] % 2 !== 0){
+      arr.splice(i, 1);
+      i--;
+      console.log(arr)
+    };
+  };
+};
+
+
+//below you're given a function that will return a random number between 0 and 30 and an 
+//array full of numbers 'randomArray'. Your
+// job is to write a function that will get a random number, then loop through the
+// array to see if that random number is in the array. If it is, alert true,
+// if it's not, alert false
+var getRandomArbitrary = function() {
+  return Math.floor(Math.random() * (30 - 0) + 0);
+}
+var randomArray = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
+
+var randomNum = function(arr){
+  var newNum = getRandomArbitrary();
+  for(var i = 0; i < arr.length; i++){
+    if(newNum === arr[i]){
+      alert true;
+    } else {
+      alert false;
+    };
+  };
+};
+
+
+//Create a Animal Constructor that has the following parameters. species, name, legs, color, food (which is an array of foods they can eat).
+
+
