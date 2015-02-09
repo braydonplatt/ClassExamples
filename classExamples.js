@@ -1263,15 +1263,16 @@ var getRandomArbitrary = function() {
 var randomArray = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 
 var randomNum = function(arr){
-  var newNum = getRandomArbitrary();
   for(var i = 0; i < arr.length; i++){
-    if(newNum === arr[i]){
-      alert true;
+  var answer = getRandomArbitrary();
+     console.log(answer);
+    if(arr[i] === answer){
+      alert(true);
     } else {
-      alert false;
-    };
-  };
-};
+      alert(false);
+    }
+  }
+}
 
 
 //Create a Animal Constructor that has the following parameters. species, name, legs, color, food (which is an array of foods they can eat).
@@ -1322,6 +1323,92 @@ var evenOccurence = function(arr){
 
 var onlyEven = evenOccurence([1,6,2,4,4,5,6,8,9,6]);
 console.log(onlyEven);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var threeItems = [1,2,3];
+//create a function named 'last' that returns the last item from 'threeItems'
+//alert the result of your function
+
+var last = function(arr){
+  return(threeItems[threeItems.length-1])
+}
+alert(last(threeItems));
+
+
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
+
+
+//Loop through evenArray removing all values that aren't even 
+var evenArray = [1,2,3,6,22,98,45,23,22,12];
+var evens = function(arr){
+  for(var i = 0; i < arr.length; i++){
+    if(arr[i] % 2 !== 0){
+      arr.splice(i, 1);
+      i--;
+    };  
+  };
+};
+console.log(evenArray);
+
+
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
+
+
+//below you're given a function that will return a random number between 0 and 30 and an array full or numbers 'randomArray'. Your job is to write a function that will get a random number, then loop through the array to see if that random number is in the array. If it is, alert true, if it's not, alert false
+var getRandomArbitrary = function() {
+  return Math.floor(Math.random() * (30 - 0) + 0);
+}
+var randomArray = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
+  var number = function(arr){
+  for(var i = 0; i < arr.length; i++){
+    var answer = getRandomArbitrary();
+    if(arr[i] === answer){
+      console.log(answer);
+      return(true);
+    };
+  };
+  return(false);
+};
+
+
+
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
+
+
+//Create a copy of first and save it into second. Then, add 6 and 7 to the end of second. When you run this, first should be just [1,2,3,4,5] and second will be [1,2,3,4,5,6,7] if you created your copy correctly.
+var first = [1,2,3,4,5];
+var second;
+
+var firstOne = first;
+second = firstOne.slice(0, 5);
+
+second.push(6,7);
+
+alert(first) //[1,2,3,4,5];
+alert(second) //[1,2,3,4,5,6,7];
+
+
+
+/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+
+
+
 
 
 
