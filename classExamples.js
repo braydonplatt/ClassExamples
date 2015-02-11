@@ -1519,3 +1519,26 @@ alertHello();
 
 
 
+
+
+
+//Loop through evenArray removing all values that aren't even 
+var evenArray = [1,2,3,6,22,98,45,23,22,12];
+var evens = function(arr){
+for(var i = 0; i < arr.length; i++){
+  if(arr[i] % 2 !== 0){
+    arr.splice(i, 1);
+    i--;
+  }
+
+}
+console.log(evenArray);
+};
+
+
+
+
+
+
+
+
