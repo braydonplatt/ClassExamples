@@ -1537,6 +1537,98 @@ console.log(evenArray);
 
 
 
+var letters = ['A', 'B', 'C', 'D', 'E'];
+//Write a function called reversedLooper that is given letters as it's 
+//only argument and loops through the given array backwards alerting 
+//every item in the array starting at the end.
+
+
+var reversedLooper = function(arr){
+  arr.reverse(i);
+    for(var i = 0; i < arr.length; i++){
+      console.log(arr[i]);
+    };
+};
+reversedLooper(letters);
+
+
+
+
+var nums = [1,2,34,54,55,34,32,11,19,17,54,66,13];
+var evens = [];
+var odds = []
+//Write a function called divider that is given three arguments, nums, evens, and odds.
+//Have divider return an Array with the first item in the array being the evens array (all the even values from nums) and the second item in the Array being the odds array(all the odd values from nums).
+
+
+var divider = function(nums,evens,odds){
+  for(var i = 0; i < nums.length; i++;){
+    if(nums[i] % 2 !== 0){
+      nums.push arr[i];
+
+    } else {
+      odds.push arr[i];
+    };
+  };
+
+};
+
+
+
+
+/* Declare and Define the functions here that will make the function calls below work properly */
+var first = function(str, callback){
+  callback(names[0]);
+}
+
+
+var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
+first(names, function(firstName){
+  console.log('The first name in names is ', firstName)
+});
+
+
+
+
+
+
+var last = function(str, callback){
+  callback(names[names.length -1]);
+}
+
+var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
+last(names, function(lastName){
+  console.log('The last name in names is ', lastName);
+});
+
+
+
+
+
+
+//have the contains function return a boolean value for if the name is in the array or not.
+
+var contains = function(arr,str,callback){
+  var flag = false;
+  for(var i = 0; i < arr.length; i++;){
+    if(str !== arr[i]){
+      flag = true;
+    }
+  }
+  callback(flag);
+};
+
+
+var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
+contains('Colt', names, function(yes){
+  if(yes){
+    console.log('Colt is in the array');
+  } else {
+    console.log('Colt is not in the list');
+  }
+});
+
+
 
 
 
