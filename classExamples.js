@@ -1632,5 +1632,45 @@ contains('Colt', names, function(yes){
 
 
 
+var threeItems = [1,2,3];
+//create a function named 'last' that returns the last item from 'threeItems'
+//alert the result of your function
+
+var last = function(arr){
+    return threeItems[threeItems.length -1];
+};
+
+alert(last(threeItems));
+
+
+
+
+//below you're given a function that will return a random number
+// between 0 and 30 and an array full of numbers 'randomArray'. 
+//Your job is to write a function that will get a random number,
+// then loop through the array to see if that random number is 
+//in the array. If it is, alert true, if it's not, alert false
+var getRandomArbitrary = function() {
+  return Math.floor(Math.random() * (30 - 0) + 0);
+}
+var randomArray = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
+
+var randomNum = function(arr){
+  var check = getRandomArbitrary();
+    console.log(check);
+  if(arr[i] % 2 !== 0){
+    arr.splice(i, 1);
+    i--;
+    };
+  };
+  return(evenArray);
+};
+
+
+
+
+
+
+
 
 
